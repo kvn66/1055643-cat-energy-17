@@ -1,7 +1,7 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вадим Калашников](https://up.htmlacademy.ru/adaptive/17/user/1055643).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Зольников](https://htmlacademy.ru/profile/id870391).
 
 ---
 
