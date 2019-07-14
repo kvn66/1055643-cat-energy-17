@@ -8,10 +8,10 @@
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <a class="page-header__logo-graph" href="#">
+        <a class="page-header__logo-graph" href="index.html">
           <img class="page-header__logo-graph-image" src="img/logo-mobile.png" width="33" height="38" alt="Логотип «Кэт энерджи»">
         </a>
-        <a class="page-header__logo-text" href="#">
+        <a class="page-header__logo-text" href="index.html">
           <img class="page-header__logo-text-image" src="img/logo-mobile-header.png" width="101" height="18" alt="Текстовый логотип «Кэт энерджи»">
         </a>
         <button class="page-header__toggle" type="button">Открыть меню</button>
@@ -19,7 +19,7 @@
       <nav class="main-navigation">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--current-page">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -36,14 +36,14 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="container">
-        <section>
-          <h1>Подбор программы</h1>
-          <p>
+    <main class="form-page-main">
+      <div class="form-page-main__container">
+        <section class="program-selection">
+          <h1 class="program-selection__title">Подбор программы</h1>
+          <p class="program-selection__description">
             Заполните анкету и мы подберем программу питания для вашего кота
           </p>
-          <form class="program-selection" action="https://echo.htmlacademy.ru" method="get">
+          <form class="program-selection-form" action="https://echo.htmlacademy.ru" method="get">
             <div class="about-cat">
               <fieldset class="about-cat__fieldset">
                 <legend class="visually-hidden">О питомце:</legend>
@@ -122,10 +122,10 @@
                 </ul>
               </fieldset>
             </div>
-            <input class="button program-selection__button" type="submit" value="Отправить заявку">
+            <input class="button program-selection-form__button" type="submit" value="Отправить заявку">
           </form>
           <div class="program-selection__footnote">
-            <p>
+            <p class="program-selection__footnote-text">
               * — Обязательные поля
             </p>
           </div>
