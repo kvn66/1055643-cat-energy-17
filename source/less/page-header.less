@@ -1,11 +1,20 @@
-.page-header__top {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
+.page-header {
+  width: 320px;
+  margin: 0 auto;
 
-.page-header__toggle {
-  width: 25px;
-  height: 20px;
-  font-size: 0;
-  background-image: url("../img/icon-mobile-menu.svg");
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 65px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 20px;
+  }
+
+  &__toggle {
+    width: 25px;
+    height: 20px;
+    font-size: 0;
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
 }
