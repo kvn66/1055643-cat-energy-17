@@ -1,19 +1,29 @@
 .programs {
   width: 280px;
   margin: 0 auto;
+  margin-top: 22px;
 }
 
 .programs__list {
+  display: block;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .programs__item {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  margin-bottom: 30px;
+
   background-color: #f2f2f2;
 }
 
 .programs__item-title {
+  margin-left: 90px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
@@ -33,4 +43,64 @@
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
+  color: black;
+}
+
+@media (min-width: @tablet-width) {
+  .programs {
+    width: 708px;
+  }
+
+  .programs__item {
+    width: 100%;
+
+    padding-left: 55px;
+    padding-right: 270px;
+
+    background-color: #f2f2f2;
+  }
+
+  .programs__item-title {
+    margin-left: 0;
+
+    font-size: 36px;
+  }
+
+  .programs__item-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programs a {
+    border-top: none;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+    width: 1300px;
+  }
+
+  .programs__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .programs__item {
+    width: 570px;
+
+    padding-left: 55px;
+    padding-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    background-color: #f2f2f2;
+  }
+
+  .programs__item-title {
+    margin-left: 215px;
+  }
 }

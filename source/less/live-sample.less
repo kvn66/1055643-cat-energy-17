@@ -71,3 +71,25 @@
 .live-sample__slider {
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .live-sample__wrapper {
+    width: 708px;
+  }
+
+  .live-sample__results-wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .live-sample__wrapper {
+    display: flex;
+
+    width: 1300px;
+  }
+
+  .live-sample__results-wrapper {
+    display: block;
+  }
+}
