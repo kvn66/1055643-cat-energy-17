@@ -5,7 +5,8 @@
 }
 
 .programs__list {
-  display: block;
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -15,20 +16,27 @@
   display: flex;
   flex-direction: column;
 
-  padding: 20px;
-  margin-bottom: 30px;
+  padding: 0 20px;
+  margin-bottom: 20px;
 
   background-color: #f2f2f2;
 }
 
 .programs__item-title {
-  margin-left: 90px;
+  margin-top: 29px;
+  margin-bottom: 30px;
+  margin-left: 71px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.programs__item-description {
+  margin-top: 0;
+  margin-bottom: 22px;
 }
 
 .programs a {
@@ -85,7 +93,7 @@
   }
 
   .programs__list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 

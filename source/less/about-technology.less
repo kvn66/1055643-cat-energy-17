@@ -1,9 +1,13 @@
 .about-technology {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   margin: 0 auto;
 }
 
 .about-technology__title {
+  margin: -4px 0 17px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
@@ -17,7 +21,20 @@
 }
 
 .about-technology__item {
-  padding-left: 80px;
+  display: flex;
+  padding-left: 10px;
+}
+
+.about-technology__image {
+  width: 60px;
+  height: 60px;
+
+  background-color: #68b738;
+}
+
+.about-technology__description {
+  margin: 0;
+  width: 100px;
 }
 
 @media (min-width: @tablet-width) {
