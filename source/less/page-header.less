@@ -28,10 +28,12 @@
   .page-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     width: 708px;
+    min-height: 113px;
     margin: 0 auto;
+    padding-top: 21px;
   }
 
   .page-header__toggle {
@@ -42,5 +44,7 @@
 @media (min-width: @desktop-width) {
   .page-header {
     width: 1220px;
+    min-height: 213px;
+    padding-top: 53px;
   }
 }

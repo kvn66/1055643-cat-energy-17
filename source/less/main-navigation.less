@@ -1,6 +1,11 @@
 .main-navigation {
-  display: none;
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
   @media (min-width: @tablet-width) {
     width: 490px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 895px;
   }
 }

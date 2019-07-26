@@ -42,19 +42,19 @@
 
 @media (min-width: @tablet-width) {
   .page-main-top {
-    min-height: 860px;
+    min-height: 815px;
 
     color: #000000;
 
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center top 228px;
   }
 
   .page-main-top__wrapper {
     justify-content: flex-start;
     width: 708px;
-    padding-left: 90px;
+    padding-left: 87px;
   }
 
   .page-main-top__banner {
@@ -63,11 +63,15 @@
   }
 
   .page-main-top__title {
+    margin-bottom: 42px;
+
     font-size: 60px;
     line-height: 60px;
   }
 
   .page-main-top__slogan {
+    margin-bottom: 49px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -85,24 +89,32 @@
   .page-main-top {
     width: 1440px;
     min-height: 696px;
-    margin: 0 auto;
-    margin-top: -100px;
+    margin: -213px auto 0;
 
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: right 355px center, right top;
+    background-position: right 328px top 142px, right top;
     background-color: #ffffff;
   }
 
   .page-main-top__wrapper {
     width: 1300px;
     padding-left: 120px;
-    padding-top: 100px;
+    padding-top: 195px;
   }
 
   .page-main-top__banner {
+    display: flex;
+    flex-direction: column;
     width: 427px;
     text-align: left;
   }
 
+  .page-main-top__title {
+    margin-bottom: 22px;
+  }
+
+  .page-main-top__slogan {
+    margin-bottom: 54px;
+  }
 }
