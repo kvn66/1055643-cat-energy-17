@@ -1,4 +1,4 @@
-.about-technology {
+.about-technology__wrapper {
   display: flex;
   flex-direction: column;
   width: 280px;
@@ -31,6 +31,7 @@
 
   background-color: #68b738;
   background-position: center center;
+  background-repeat: no-repeat;
 
   &--useful {
     background-image: url("../img/advantage-leaf@1x.png");
@@ -56,11 +57,16 @@
 
 @media (min-width: @tablet-width) {
   .about-technology {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .about-technology__wrapper {
     width: 708px;
+    margin: 0 auto;
   }
 
   .about-technology__title {
-    margin: 14px 0 29px;
+    margin: 14px 0;
 
     font-size: 60px;
     line-height: 60px;
@@ -68,16 +74,36 @@
 
   .about-technology__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 634px;
+    margin-bottom: 28px;
   }
 
   .about-technology__item {
-    width: 324px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 59px;
+    margin-bottom: 75px;
+  }
+
+  .about-technology__image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-technology__description {
+    margin: 31px 0 0 0;
+    width: 250px;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .about-technology {
+  .about-technology__wrapper {
     width: 1300px;
   }
 }
