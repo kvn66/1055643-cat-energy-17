@@ -123,11 +123,18 @@
   }
 
   .programs__item-description {
-    width: 380px;
     margin-bottom: 38px;
 
     font-size: 16px;
     line-height: 24px;
+
+    &--lose-weight {
+      width: 380px;
+    }
+
+    &--fatten {
+      width: 340px;
+    }
   }
 
   .programs a {
@@ -152,7 +159,7 @@
   .programs__item {
     width: 570px;
 
-    padding-left: 55px;
+    padding-left: 52px;
     padding-right: 50px;
     margin-left: 40px;
     margin-right: 40px;
@@ -160,7 +167,39 @@
     background-color: #f2f2f2;
   }
 
+  .programs__item-image {
+    width: 175px;
+    height: 147px;
+    left: 14px;
+    top: 0;
+
+    &--lose-weight {
+      background-image: url("../img/icon-cat-slim.svg"), url("../img/icon-circle.svg");
+      background-position: 52px 41px, center bottom;
+      background-size: 70px, 100px;
+    }
+
+    &--fatten {
+      background-image: url("../img/icon-cat-pro.svg"), url("../img/icon-circle.svg");
+      background-position: 19px 69px, center bottom;
+      background-size: 135px, 100px;
+    }
+  }
+
   .programs__item-title {
-    margin-left: 215px;
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+
+  .programs__item-description {
+    margin-bottom: 13px;
+
+    &--lose-weight {
+      width: 470px;
+    }
+
+    &--fatten {
+      width: 470px;
+    }
   }
 }
