@@ -20,3 +20,30 @@
 .site-list__item a {
   color: black;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .site-list__item {
+    margin-left: 35px;
+    border-bottom: none;
+
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    font-size: 20px;
+  }
+
+  .site-list__item a {
+    color: white;
+  }
+}
