@@ -1,9 +1,13 @@
-.about-technology {
+.about-technology__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 280px;
-  margin: 0 auto;
+  margin: 0 auto 22px;
 }
 
 .about-technology__title {
+  margin: -4px 0 29px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
@@ -17,5 +21,109 @@
 }
 
 .about-technology__item {
-  padding-left: 80px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.about-technology__image {
+  width: 60px;
+  height: 60px;
+
+  background-color: #68b738;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &--useful {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--easy {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--effectively {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--fast {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+.about-technology__description {
+  margin: 2px 0 0 20px;
+  width: 200px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-technology {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .about-technology__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .about-technology__title {
+    margin: 14px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .about-technology__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 634px;
+    margin-bottom: 28px;
+  }
+
+  .about-technology__item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 59px;
+    margin-bottom: 75px;
+  }
+
+  .about-technology__image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-technology__description {
+    margin: 31px 0 0 0;
+    width: 250px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-technology {
+    border-bottom: none;
+  }
+
+  .about-technology__wrapper {
+    width: 1220px;
+  }
+
+  .about-technology__title {
+    margin: 42px 0 14px;
+  }
+
+  .about-technology__list {
+    width: 1220px;
+    margin-bottom: 0;
+  }
+
+  .about-technology__item {
+    width: 245px;
+    min-height: 230px;
+    margin-top: 59px;
+    margin-bottom: 0;
+  }
 }

@@ -1,18 +1,36 @@
 .catalog-page-main__title-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
 
-  min-height: 103px;
+  min-height: 104px;
 
   border-bottom: 1px solid #ededed;
 }
 
 .catalog-page-main__title {
   width: 280px;
+  margin: 14px 0;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-page-main__title-wrapper {
+    justify-content: flex-start;
+
+    min-height: 104px;
+
+    border-bottom: none;
+  }
+
+  .catalog-page-main__title {
+    width: 708px;
+    margin: 26px auto 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

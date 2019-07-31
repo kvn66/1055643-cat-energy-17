@@ -1,24 +1,66 @@
 .programs {
   width: 280px;
   margin: 0 auto;
+  margin-top: 22px;
 }
 
 .programs__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .programs__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  padding: 0 20px;
+  margin-bottom: 20px;
+
   background-color: #f2f2f2;
 }
 
 .programs__item-title {
+  margin-top: 29px;
+  margin-bottom: 30px;
+  margin-left: 71px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.programs__item-image {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 75px;
+  left: 9px;
+  top: 0;
+
+  background-repeat: no-repeat;
+
+  &--lose-weight {
+    background-image: url("../img/icon-cat-slim.svg"), url("../img/icon-circle.svg");
+    background-position: 21px 22px, center bottom;
+    background-size: 35px, 50px;
+  }
+
+  &--fatten {
+    background-image: url("../img/icon-cat-pro.svg"), url("../img/icon-circle.svg");
+    background-position: 4px 35px, center bottom;
+    background-size: 67px, 50px;
+  }
+}
+
+.programs__item-description {
+  margin-top: 0;
+  margin-bottom: 22px;
 }
 
 .programs a {
@@ -33,4 +75,131 @@
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
+  color: black;
+}
+
+@media (min-width: @tablet-width) {
+  .programs {
+    width: 708px;
+  }
+
+  .programs__item {
+    width: 100%;
+
+    padding-left: 52px;
+    padding-right: 270px;
+    padding-top: 47px;
+    margin-bottom: 30px;
+
+    background-color: #f2f2f2;
+  }
+
+  .programs__item-title {
+    margin-left: 0;
+    margin-bottom: 24px;
+
+    font-size: 36px;
+  }
+
+  .programs__item-image {
+    width: 292px;
+    height: 292px;
+    left: 401px;
+    top: 0;
+
+    background-repeat: no-repeat;
+
+    &--lose-weight {
+      background-image: url("../img/icon-cat-slim.svg"), url("../img/icon-circle.svg");
+      background-position: 75px 80px, center bottom;
+      background-size: 140px, 200px;
+    }
+
+    &--fatten {
+      background-image: url("../img/icon-cat-pro.svg"), url("../img/icon-circle.svg");
+      background-position: 10px 135px, center bottom;
+      background-size: 270px, 200px;
+    }
+  }
+
+  .programs__item-description {
+    margin-bottom: 38px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &--lose-weight {
+      width: 380px;
+    }
+
+    &--fatten {
+      width: 340px;
+    }
+  }
+
+  .programs a {
+    border-top: none;
+    margin-bottom: 43px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+    width: 1300px;
+  }
+
+  .programs__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .programs__item {
+    width: 570px;
+
+    padding-left: 52px;
+    padding-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    background-color: #f2f2f2;
+  }
+
+  .programs__item-image {
+    width: 175px;
+    height: 147px;
+    left: 14px;
+    top: 0;
+
+    &--lose-weight {
+      background-image: url("../img/icon-cat-slim.svg"), url("../img/icon-circle.svg");
+      background-position: 52px 41px, center bottom;
+      background-size: 70px, 100px;
+    }
+
+    &--fatten {
+      background-image: url("../img/icon-cat-pro.svg"), url("../img/icon-circle.svg");
+      background-position: 19px 69px, center bottom;
+      background-size: 135px, 100px;
+    }
+  }
+
+  .programs__item-title {
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+
+  .programs__item-description {
+    margin-bottom: 13px;
+
+    &--lose-weight {
+      width: 470px;
+    }
+
+    &--fatten {
+      width: 470px;
+    }
+  }
 }
