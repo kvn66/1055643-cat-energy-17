@@ -11,7 +11,7 @@
 .main-catalog__list-item-container {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: @mobile-container;
   margin: 0 auto;
 }
 
@@ -62,7 +62,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 708px;
+    width: @tablet-container;
     margin: 0 auto;
   }
 
@@ -122,5 +122,24 @@
   .main-catalog__button {
     width: 250px;
     margin: 33px auto 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog__list {
+    width: @desktop-container;
+  }
+
+  .main-catalog__list-item {
+    width: 245px;
+    margin-top: 63px;
+  }
+
+  .main-catalog__product {
+    width: 168px;
+  }
+
+  .main-catalog__button {
+    width: 169px;
   }
 }

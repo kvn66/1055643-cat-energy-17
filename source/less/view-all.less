@@ -1,7 +1,7 @@
 .view-all {
   display: flex;
   flex-direction: column;
-  min-height: 432px;
+  min-height: 208px;
 
   background-image: url("../img/icon-plus.svg");
   background-size: 30px 30px;
@@ -42,6 +42,7 @@
   .view-all {
     display: flex;
     align-items: center;
+    min-height: 432px;
     margin-top: 80px;
 
     border: 1px solid #e6e6e6;
@@ -68,5 +69,11 @@
     width: 248px;
     margin-top: 68px;
     margin-bottom: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .view-all__button {
+    width: 169px;
   }
 }
