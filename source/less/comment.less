@@ -14,3 +14,28 @@
   font: inherit;
   text-transform: inherit;
 }
+
+@media (min-width: @tablet-width) {
+  .comment {
+    width: @tablet-container;
+    padding: 0 37px 0 40px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .comment__input {
+    min-height: 174px;
+    padding: 9px 18px;
+
+    font: inherit;
+    text-transform: inherit;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    width: @desktop-container;
+    padding: 0;
+  }
+}

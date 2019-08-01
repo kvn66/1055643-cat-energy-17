@@ -21,3 +21,28 @@
 .additional-options__item label {
   margin-top: 7px;
 }
+
+@media (min-width: @tablet-width) {
+  .additional-options {
+    width: @tablet-container;
+    margin: 0 auto;
+  }
+
+  .additional-options__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+    margin: 0;
+    padding: 0 40px 20px 40px;
+  }
+
+  .additional-options__item {
+    width: 284px;
+    margin-bottom: 45px;
+    padding-left: 58px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

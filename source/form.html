@@ -118,7 +118,7 @@
       <fieldset class="program-selection__contact-data contact-data">
         <legend class="visually-hidden">Контактные данные владельца кота</legend>
         <ul class="contact-data__list">
-          <li class="contact-data__item">
+          <li class="contact-data__item contact-data__item--email">
             <label for="contact-data-email">E-mail:*</label>
             <input
               class="contact-data__input" id="contact-data-email" name="contact-data-email"
@@ -126,7 +126,7 @@
               type="email"
             >
           </li>
-          <li class="contact-data__item">
+          <li class="contact-data__item contact-data__item--phone">
             <label for="contact-data-phone">Телефон:*</label>
             <input
               class="contact-data__input" id="contact-data-phone" name="contact-data-phone"
@@ -186,13 +186,15 @@
           </li>
         </ul>
       </fieldset>
-      <input class="button program-selection__form-button" type="submit" value="Отправить заявку">
+      <div class="program-selection__form-button-wrapper">
+        <input class="button program-selection__form-button" type="submit" value="Отправить заявку">
+        <div class="program-selection__footnote">
+          <p class="program-selection__footnote-text">
+            * — Обязательные поля
+          </p>
+        </div>
+      </div>
     </form>
-    <div class="program-selection__footnote">
-      <p class="program-selection__footnote-text">
-        * — Обязательные поля
-      </p>
-    </div>
   </section>
 </main>
 <footer class="page-footer">
