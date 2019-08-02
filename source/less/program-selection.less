@@ -46,10 +46,10 @@
   width: @mobile-container;
   margin: 0 auto;
   padding-top: 6px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
 
   font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   text-align: center;
   text-transform: none;
@@ -91,7 +91,7 @@
     height: 53px;
     margin: 0 0 0 39px;
     align-items: flex-start;
-    padding-top: 0px;
+    padding-top: 0;
 
     font-size: 20px;
     line-height: 20px;
@@ -102,11 +102,16 @@
     margin: 0 0 0 62px;
     padding: 0;
 
+    font-size: 16px;
     text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .program-selection {
+    padding-bottom: 82px;
+  }
+
   .program-selection__top {
     width: @desktop-container;
   }
@@ -120,5 +125,18 @@
     justify-content: space-between;
     width: @desktop-container;
     margin: 0 auto;
+  }
+
+  .program-selection__form-button-wrapper {
+    width: @desktop-container;
+  }
+
+  .program-selection__form-button {
+    width: 570px;
+    margin: 0;
+  }
+
+  .program-selection__footnote {
+    margin: 0 0 0 81px;
   }
 }
