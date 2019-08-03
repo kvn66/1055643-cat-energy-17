@@ -1,14 +1,15 @@
 .catalog-page-main__title-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
+  width: @mobile-container;
   min-height: 104px;
+  margin: 0 auto;
 
   border-bottom: 1px solid #ededed;
 }
 
 .catalog-page-main__title {
-  width: 280px;
   margin: 14px 0;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -19,18 +20,27 @@
 
 @media (min-width: @tablet-width) {
   .catalog-page-main__title-wrapper {
-    justify-content: flex-start;
-
+    width: @tablet-container;
     min-height: 104px;
 
     border-bottom: none;
   }
 
   .catalog-page-main__title {
-    width: 708px;
-    margin: 26px auto 0;
+    margin: 26px 0;
 
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-page-main__title-wrapper {
+    width: @desktop-container;
+    min-height: 104px;
+  }
+
+  .catalog-page-main__title {
+    margin: 26px 0 23px;
   }
 }

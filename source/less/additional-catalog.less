@@ -1,29 +1,16 @@
-.additional-catalog {
-  width: 280px;
+.additional-catalog__wrapper {
+  width: @mobile-container;
   margin: 0 auto;
 }
 
 .additional-catalog__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
+  border-top: 1px solid #cdcdcd;
 }
 
 .additional-catalog__list-item {
-  border-bottom: 1px solid #cdcdcd;
-}
-
-.additional-catalog__title {
-  display: flex;
-
-  min-height: 59px;
-  margin: 28px 0 0;
-
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: normal;
-
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -51,4 +38,110 @@
 .additional-catalog__button {
   margin-top: 10px;
   margin-bottom: 17px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-catalog__wrapper {
+    width: @tablet-container;
+  }
+
+  .additional-catalog__list {
+    margin-top: 58px;
+
+    border: 1px solid #e6e6e6;
+  }
+
+  .additional-catalog__list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 37px;
+
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .additional-catalog__product-title {
+    width: 380px;
+    margin-top: 25px;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-catalog__product-properties {
+    width: 227px;
+    margin-left: 0;
+    margin-top: 28px;
+
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-catalog__field {
+    text-align: right;
+  }
+
+  .additional-catalog__value {
+    width: 93px;
+  }
+
+  .additional-catalog__button {
+    width: 100%;
+    margin-top: 21px;
+    margin-bottom: 27px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-catalog {
+    padding-bottom: 85px;
+  }
+
+  .additional-catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: @desktop-container;
+  }
+
+  .additional-catalog__list {
+    width: 896px;
+    margin-top: 58px;
+
+    border: none;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .additional-catalog__list-item {
+    padding: 0;
+    min-height: 72px;
+  }
+
+  .additional-catalog__product-title {
+    width: 285px;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  .additional-catalog__product-properties {
+    width: 288px;
+    margin-left: 0;
+    margin-top: 29px;
+  }
+
+  .additional-catalog__field {
+    text-align: left;
+  }
+
+  .additional-catalog__value {
+    width: 44px;
+    text-align: left;
+  }
+
+  .additional-catalog__button {
+    width: 245px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
 }

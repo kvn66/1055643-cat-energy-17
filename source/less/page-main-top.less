@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 280px;
+  width: @mobile-container;
   margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@
 
   .page-main-top__wrapper {
     justify-content: flex-start;
-    width: 708px;
+    width: @tablet-container;
     padding-left: 87px;
   }
 
@@ -87,26 +87,30 @@
 
 @media (min-width: @desktop-width) {
   .page-main-top {
-    width: 1440px;
     min-height: 696px;
-    margin: -213px auto 80px;
+    margin: 0 auto 80px;
 
-    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: right 328px top 142px, right top;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
     background-color: #ffffff;
   }
 
   .page-main-top__wrapper {
-    width: 1300px;
-    padding-left: 120px;
-    padding-top: 195px;
+    width: @desktop-container;
+    padding-left: 80px;
+
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: left 450px top 142px;
   }
 
   .page-main-top__banner {
     display: flex;
     flex-direction: column;
     width: 427px;
+    margin-top: 195px;
     text-align: left;
   }
 

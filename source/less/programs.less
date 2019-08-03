@@ -1,5 +1,5 @@
 .programs {
-  width: 280px;
+  width: @mobile-container;
   margin: 0 auto;
   margin-top: 22px;
 }
@@ -80,7 +80,7 @@
 
 @media (min-width: @tablet-width) {
   .programs {
-    width: 708px;
+    width: @tablet-container;
   }
 
   .programs__item {
@@ -148,12 +148,13 @@
 
 @media (min-width: @desktop-width) {
   .programs {
-    width: 1300px;
+    width: @desktop-container;
   }
 
   .programs__list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .programs__item {
@@ -161,8 +162,7 @@
 
     padding-left: 52px;
     padding-right: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 0 31px;
 
     background-color: #f2f2f2;
   }
