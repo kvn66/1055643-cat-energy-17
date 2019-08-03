@@ -63,7 +63,7 @@
   margin-bottom: 22px;
 }
 
-.programs a {
+.programs__link {
   display: flex;
   align-items: center;
 
@@ -75,7 +75,11 @@
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
-  color: black;
+  color: #111111;
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -137,7 +141,7 @@
     }
   }
 
-  .programs a {
+  .programs__link {
     border-top: none;
     margin-bottom: 43px;
 

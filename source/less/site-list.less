@@ -18,7 +18,15 @@
 }
 
 .site-list__item a {
-  color: black;
+  color: #111111;
+
+  &:hover {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -45,5 +53,13 @@
 
   .site-list__item--first-page a {
     color: white;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
