@@ -8,14 +8,19 @@
 .additional-options__list {
   width: @mobile-container;
   margin: 0 auto;
-  padding: 0 0 21px;
+  padding: 0 0 24px;
   list-style: none;
 }
 
 .additional-options__item {
   display: flex;
-  margin-bottom: 18px;
+  position: relative;
+  margin-bottom: 17px;
   padding-left: 46px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .additional-options__item label {

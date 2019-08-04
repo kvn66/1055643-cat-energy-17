@@ -15,9 +15,23 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+
+  &--current-page a {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+
+      background-color: #68b738;
+    }
+  }
 }
 
 .site-list__item a {
+  position: relative;
   color: #111111;
 
   &:hover {
@@ -60,6 +74,10 @@
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
+    }
+
+    &::after {
+      background-color: #ffffff;
     }
   }
 }
