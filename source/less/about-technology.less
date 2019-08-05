@@ -22,19 +22,10 @@
 
 .about-technology__item {
   display: flex;
+  position: relative;
   margin-bottom: 20px;
-}
 
-.about-technology__image {
-  width: 60px;
-  height: 60px;
-
-  background-color: #68b738;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 50px;
-
-  &--useful {
+  &--useful::before {
     background-image: url("../img/advantage-leaf@1x.png");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -42,7 +33,7 @@
     }
   }
 
-  &--easy {
+  &--easy::before {
     background-image: url("../img/advantage-powder@1x.png");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -50,7 +41,7 @@
     }
   }
 
-  &--effectively {
+  &--effectively::before {
     background-image: url("../img/advantage-dining@1x.png");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -58,13 +49,44 @@
     }
   }
 
-  &--fast {
+  &--fast::before {
     background-image: url("../img/advantage-clock@1x.png");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/advantage-clock@2x.png");
     }
   }
+}
+
+.about-technology__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+
+  background-color: #68b738;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.about-technology__item::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 80px;
+  height: 230px;
+  right: 48px;
+  top: -40px;
+
+  background-color: transparent;
+  background-position: left top;
+  background-repeat: no-repeat;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 281px;
+  line-height: 281px;
+  font-weight: normal;
+  color: #f2f2f2;
 }
 
 .about-technology__description {
@@ -83,7 +105,7 @@
   }
 
   .about-technology__title {
-    margin: 14px 0;
+    margin: 15px 0 13px;
 
     font-size: 60px;
     line-height: 60px;
@@ -102,16 +124,36 @@
     flex-direction: column;
     width: 250px;
     margin-top: 59px;
-    margin-bottom: 75px;
+    margin-bottom: 74px;
+
+    &--useful::after {
+      content: "1";
+      right: 52px;
+    }
+
+    &--easy::after {
+      content: "2";
+      right: 59px;
+    }
+
+    &--effectively::after {
+      content: "3";
+      right: 57px;
+    }
+
+    &--fast::after {
+      content: "4";
+      right: 57px;
+    }
   }
 
-  .about-technology__image {
+  .about-technology__item::before {
     width: 80px;
     height: 80px;
   }
 
   .about-technology__description {
-    margin: 31px 0 0 0;
+    margin: 32px 0 0 0;
     width: 250px;
 
     font-size: 16px;
@@ -142,5 +184,21 @@
     min-height: 230px;
     margin-top: 59px;
     margin-bottom: 0;
+
+    &--useful::after {
+      right: 48px;
+    }
+
+    &--easy::after {
+      right: 54px;
+    }
+
+    &--effectively::after {
+      right: 52px;
+    }
+
+    &--fast::after {
+      right: 52px;
+    }
   }
 }

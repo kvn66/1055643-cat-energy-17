@@ -63,6 +63,12 @@
 @media (min-width: @desktop-width) {
   .site-list__item {
     font-size: 20px;
+
+    &--current-page a {
+      &::after {
+        bottom: -10px;
+      }
+    }
   }
 
   .site-list__item--first-page a {

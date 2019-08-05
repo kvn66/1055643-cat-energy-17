@@ -4,29 +4,32 @@
   align-items: center;
 
   min-height: 78px;
-}
 
-.copyright a {
-  color: black;
-}
-
-.copyright__text {
+  color: #444444;
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
+
+  &:hover svg,
+  &:active svg {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__link {
-  width: 40px;
+.copyright__image {
+  width: 41px;
   margin-right: -7px;
-}
 
-.copyright__image path {
-  fill: black;
+  fill: #666666;
 }
 
 @media (min-width: @tablet-width) {
   .copyright__text {
     margin-right: 16px;
+    margin-top: 12px;
   }
 }
