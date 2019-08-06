@@ -177,7 +177,7 @@
       <div class="live-sample__additional-wrapper">
         <h2 class="live-sample__title">Живой пример</h2>
         <p class="live-sample__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без
           изнуряющих тренировок! При этом он не менял своих привычек&nbsp;и по-прежнему спит по 16 часов в день.
         </p>
         <div class="live-sample__results-wrapper">
@@ -207,18 +207,28 @@
       <div class="live-sample__image-additional-wrapper">
         <div class="live-sample__image-wrapper">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
             <img
-              class="live-sample__image" alt="Пример «До и После»" src="img/before-mobile@1x.png"
-              srcset="img/before-mobile@2x.png 2x" width="320" height="240"
+              class="live-sample__image live-sample__image--after" alt="Пример «До и После»" src="img/after-mobile@1x.png"
+              srcset="img/after-mobile@2x.png 2x" width="320" height="240"
             >
           </picture>
+          <div class="live-sample__image-before-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img
+                class="live-sample__image live-sample__image--before" alt="Пример «До и После»" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" width="320" height="240"
+              >
+            </picture>
+          </div>
         </div>
         <div class="live-sample__slider-control">
-          <button class="live-sample__slider-control-button" type="button">Было</button>
-          <span class="live-sample__slider-control-image"></span>
-          <button class="live-sample__slider-control-button" type="button">Стало</button>
+          <button class="live-sample__slider-control-button live-sample__slider-control-button--before" type="button">Было</button>
+          <div class="live-sample__slider-control-image"></div>
+          <button class="live-sample__slider-control-button live-sample__slider-control-button--after" type="button">Стало</button>
         </div>
       </div>
     </div>
