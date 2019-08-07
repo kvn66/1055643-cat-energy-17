@@ -1,0 +1,36 @@
+.alert-dialog {
+  width: 60%;
+  text-align: center;
+  padding-top: 1%;
+  border-radius: 5px;
+  border: 2px solid red;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.alert-dialog-close {
+  width: 50%;
+  margin: 10% auto;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@media (min-width: @tablet-width) {
+  .alert-dialog {
+    width: 40%;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .alert-dialog-close {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .alert-dialog {
+    width: 30%;
+  }
+}

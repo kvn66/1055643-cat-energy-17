@@ -94,6 +94,15 @@
   height: 100%;
   width: 50%;
   overflow: hidden;
+  background-color: #f2f2f2;
+
+  &--before {
+    width: 100%;
+  }
+
+  &--after {
+    width: 0;
+  }
 }
 
 .live-sample__image {
@@ -241,8 +250,14 @@
     margin: 88px 0 14px 17px;
   }
 
+  .live-sample__image-before-wrapper {
+    background-image: linear-gradient(#ffffff 167px, #eaeaea 167px);
+  }
+
   .live-sample__image {
-    width: 100%;
+    max-width: 686px;
+    width: 686px;
+    height: 514px;
   }
 
   .live-sample__slider-control-button {
@@ -359,6 +374,10 @@
 
   .live-sample__image-wrapper {
     margin: 26px 0 35px 136px;
+  }
+
+  .live-sample__image-before-wrapper {
+    background-image: linear-gradient(#ffffff 189px, #eaeaea 189px);
   }
 
   .live-sample__slider-control-button {
