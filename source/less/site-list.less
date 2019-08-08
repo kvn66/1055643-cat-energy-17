@@ -15,10 +15,32 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+
+  &--current-page a {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+
+      background-color: #68b738;
+    }
+  }
 }
 
 .site-list__item a {
-  color: black;
+  position: relative;
+  color: #111111;
+
+  &:hover {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -45,5 +67,17 @@
 
   .site-list__item--first-page a {
     color: white;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &::after {
+      background-color: #ffffff;
+    }
   }
 }

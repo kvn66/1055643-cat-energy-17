@@ -8,11 +8,28 @@
 
 .comment__input {
   width: 100%;
-  min-height: 150px;
+  height: 150px;
   padding: 13px;
+
+  border: 1px solid #e6e6e6;
+  outline: none;
 
   font: inherit;
   text-transform: inherit;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active,
+  &:focus {
+    outline: #444444 solid 2px;
+  }
+
+  &:invalid {
+    outline: #ff8282 solid 2px;
+    border: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -25,7 +42,7 @@
   }
 
   .comment__input {
-    min-height: 174px;
+    height: 174px;
     padding: 9px 18px;
 
     font: inherit;

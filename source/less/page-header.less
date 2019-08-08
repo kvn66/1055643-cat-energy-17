@@ -16,6 +16,10 @@
     width: @mobile-container;
   }
 
+  .page-header__logo-graph {
+    opacity: 10%;
+  }
+
   .page-header__toggle {
     width: 25px;
     height: 20px;
@@ -33,7 +37,19 @@
     width: @tablet-container;
     min-height: 113px;
     margin: 0 auto;
-    padding-top: 21px;
+    padding-top: 23px;
+  }
+
+  .page-header__logo-graph-image {
+    width: 173px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .page-header__toggle {
@@ -58,5 +74,9 @@
       top: 0;
       left: 0;
     }
+  }
+
+  .page-header__logo-graph-image {
+    width: 202px;
   }
 }

@@ -1,0 +1,48 @@
+.input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -46px;
+  top: 0;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #cecece;
+  border-radius: 50%;
+}
+
+.input-radio + label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 9px;
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+  background-color: #68b738;
+}
+
+.input-radio:checked + label::after {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .input-radio + label::before {
+    left: -59px;
+    top: 4px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .input-radio + label::after {
+    left: -48px;
+    top: 15px;
+
+    width: 18px;
+    height: 18px;
+  }
+}
