@@ -13,6 +13,7 @@
 }
 
 .contact-data__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
@@ -45,6 +46,34 @@
     outline: #ff8282 solid 2px;
     border: none;
   }
+
+  &:focus + svg,
+  &:active + svg {
+    fill: #68b738;
+  }
+
+  &:invalid + svg {
+    fill: #ff8282;
+  }
+}
+
+.contact-data__icon {
+  display: block;
+  position: absolute;
+
+  &--email {
+    top: 16px;
+    right: 16px;
+    width: 17px;
+    height: 13px;
+  }
+
+  &--phone {
+    top: 13px;
+    right: 13px;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -58,13 +87,6 @@
     padding: 0 37px 0 38px;
   }
 
-  .contact-data__item {
-    margin-bottom: 20px;
-
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .contact-data__item label {
     margin-top: 15px;
     margin-right: 17px;
@@ -75,21 +97,40 @@
     padding: 12px 55px 12px 12px;
   }
 
-  .contact-data__item--email label {
-    margin-left: 3px;
-    margin-right: 18px;
+  .contact-data__item {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &--email label {
+      margin-left: 3px;
+      margin-right: 18px;
+    }
+
+    &--email input {
+      padding-left: 20px;
+    }
+
+    &--phone label {
+      margin-right: 16px;
+    }
+
+    &--phone input {
+      padding-left: 18px;
+    }
   }
 
-  .contact-data__item--email input {
-    padding-left: 20px;
-  }
+  .contact-data__icon {
+    &--email {
+      top: 20px;
+      right: 19px;
+    }
 
-  .contact-data__item--phone label {
-    margin-right: 16px;
-  }
-
-  .contact-data__item--phone input {
-    padding-left: 18px;
+    &--phone {
+      top: 17px;
+      right: 16px;
+    }
   }
 }
 
@@ -124,5 +165,17 @@
 
   .contact-data__item--phone input {
     padding-left: 17px;
+  }
+
+  .contact-data__icon {
+    &--email {
+      top: 20px;
+      right: 20px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 19px;
+    }
   }
 }
