@@ -1,7 +1,6 @@
 .programs {
   width: @mobile-container;
-  margin: 0 auto;
-  margin-top: 22px;
+  margin: 22px auto 0;
 }
 
 .programs__list {
@@ -36,25 +35,21 @@
 }
 
 .programs__item-image {
+  display: block;
   position: absolute;
   content: "";
-  width: 75px;
-  height: 75px;
-  left: 9px;
-  top: 0;
+  width: 68px;
+  height: 68px;
+  left: 12px;
+  top: 15px;
 
   background-repeat: no-repeat;
+  background-image: url("../img/circle.svg");
+  background-position: center center;
+  background-size: 50px;
 
   &--lose-weight {
-    background-image: url("../img/icon-cat-slim.svg"), url("../img/icon-circle.svg");
-    background-position: 21px 22px, center bottom;
-    background-size: 35px, 50px;
-  }
-
-  &--fatten {
-    background-image: url("../img/icon-cat-pro.svg"), url("../img/icon-circle.svg");
-    background-position: 4px 35px, center bottom;
-    background-size: 67px, 50px;
+    padding: 7px 5px 12px 8px;
   }
 }
 
@@ -84,13 +79,13 @@
     margin-left: 12px;
     margin-top: 2px;
 
-    background-image: url("../img/icon-right-arrow-long.svg");
+    background-image: url("../img/right-arrow-long.svg");
     background-size: contain;
     background-repeat: no-repeat;
   }
 
   &:hover::after {
-    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/right-arrow-verylong.svg");
   }
 
   &:active {
@@ -99,7 +94,7 @@
 
   &:active::after {
     color: rgba(17, 17, 17, 0.3);
-    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/right-arrow-verylong.svg");
   }
 }
 
@@ -127,23 +122,15 @@
   }
 
   .programs__item-image {
-    width: 292px;
-    height: 292px;
-    left: 401px;
-    top: 0;
+    width: 268px;
+    height: 269px;
+    left: 413px;
+    top: 56px;
 
-    background-repeat: no-repeat;
+    background-size: 200px;
 
     &--lose-weight {
-      background-image: url("../img/icon-cat-slim.svg"), url("../img/icon-circle.svg");
-      background-position: 75px 80px, center bottom;
-      background-size: 140px, 200px;
-    }
-
-    &--fatten {
-      background-image: url("../img/icon-cat-pro.svg"), url("../img/icon-circle.svg");
-      background-position: 10px 135px, center bottom;
-      background-size: 270px, 200px;
+      padding: 24px 10px 51px 8px;
     }
   }
 
@@ -199,21 +186,15 @@
   }
 
   .programs__item-image {
-    width: 175px;
-    height: 147px;
-    left: 14px;
-    top: 0;
+    width: 134px;
+    height: 136px;
+    left: 34px;
+    top: 29px;
+
+    background-size: 100px;
 
     &--lose-weight {
-      background-image: url("../img/icon-cat-slim.svg"), url("../img/icon-circle.svg");
-      background-position: 52px 41px, center bottom;
-      background-size: 70px, 100px;
-    }
-
-    &--fatten {
-      background-image: url("../img/icon-cat-pro.svg"), url("../img/icon-circle.svg");
-      background-position: 19px 69px, center bottom;
-      background-size: 135px, 100px;
+      padding: 12px 8px 27px 8px;
     }
   }
 

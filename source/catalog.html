@@ -4,9 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="js/picturefill-min.js" as="script">
+  <link rel="preload" href="js/menu-min.js" as="script">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
 </head>
 <body>
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="page-header">
   <div class="page-header__wrapper">
     <div class="page-header__top">
@@ -472,21 +479,21 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg width="22" height="12">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
               <svg width="16" height="16">
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <svg width="10" height="19">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -495,13 +502,13 @@
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
         <svg class="copyright__image" width="40" height="40">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </div>
   </div>
 </footer>
-<script src="js/picturefill.js"></script>
-<script src="js/menu.js"></script>
+<script src="js/picturefill-min.js"></script>
+<script src="js/menu-min.js"></script>
 </body>
 </html>
