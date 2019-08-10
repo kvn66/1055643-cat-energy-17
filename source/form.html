@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="js/picturefill-min.js" as="script">
-  <link rel="preload" href="js/menu-min.js" as="script">
-  <link rel="preload" href="js/form-validation-min.js" as="script">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link as="script" href="js/picturefill-min.js" rel="preload">
+  <link as="script" href="js/menu-min.js" rel="preload">
+  <link as="script" href="js/form-validation-min.js" rel="preload">
+  <link as="font" href="fonts/oswaldregular.woff2" rel="preload">
+  <link as="font" href="fonts/oswaldmedium.woff2" rel="preload">
 </head>
 <body>
 <div style="display: none;">
@@ -24,8 +24,8 @@
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img
-              class="page-header__logo-graph-image" alt="Логотип «Кэт энерджи»" src="img/logo-mobile.svg" width="190"
-              height="37"
+              alt="Логотип «Кэт энерджи»" class="page-header__logo-graph-image" height="37" src="img/logo-mobile.svg"
+              width="190"
             >
           </picture>
         </a>
@@ -136,7 +136,7 @@
               placeholder="kuklachev@gmail.com" title="Введите данные в формате: kuklachev@gmail.com"
               type="email"
             >
-            <svg class="contact-data__icon contact-data__icon--email" width="17" height="13">
+            <svg class="contact-data__icon contact-data__icon--email" height="13" width="17">
               <use xlink:href="#icon-mail"></use>
             </svg>
           </li>
@@ -147,7 +147,7 @@
               placeholder="8 (960) 900-60-90"
               title="Введите телефонный номер в формате: 8 (960) 900-60-90" type="tel"
             >
-            <svg class="contact-data__icon contact-data__icon--phone" width="20" height="20">
+            <svg class="contact-data__icon contact-data__icon--phone" height="20" width="20">
               <use xlink:href="#icon-phone"></use>
             </svg>
           </li>
@@ -231,12 +231,16 @@
     </div>
   </div>
   <div class="page-footer__map">
-    <iframe allowfullscreen class="page-footer__map-frame" src="https://yandex.ru/map-widget/v1/-/CCCtq83W"></iframe>
+    <iframe class="page-footer__map-frame" allowfullscreen src="https://yandex.ru/map-widget/v1/-/CCCtq83W"></iframe>
   </div>
+  <picture>
+    <source type="image/webp" srcset="img/map-pin.webp">
+    <img class="page-footer__map-marker" src="img/map-pin.png" width="124" height="106" alt="Маркер на карте">
+  </picture>
   <div class="page-footer__bottom">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <svg width="127" height="23">
+        <svg height="23" width="127">
           <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
@@ -244,21 +248,21 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg width="22" height="12">
+              <svg height="12" width="22">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <svg width="16" height="16">
+              <svg height="16" width="16">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg width="10" height="19">
+              <svg height="19" width="10">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
@@ -267,7 +271,7 @@
       </div>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
-        <svg class="copyright__image" width="40" height="40">
+        <svg class="copyright__image" height="40" width="40">
           <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
