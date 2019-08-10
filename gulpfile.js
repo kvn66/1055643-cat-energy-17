@@ -117,8 +117,8 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/js/**/*.js", gulp.series("compress_js"));
+  gulp.watch("source/less/**/*.less", gulp.series("css", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("compress_js", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("optimize_svg", "sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });

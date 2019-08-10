@@ -1,6 +1,7 @@
-const image_before = document.querySelector(".live-sample__image-before-wrapper");
-const button_before = document.querySelector(".live-sample__slider-control-button--before");
-const button_after = document.querySelector(".live-sample__slider-control-button--after");
+// Live sample
+var image_before = document.querySelector(".live-sample__image-before-wrapper");
+var button_before = document.querySelector(".live-sample__slider-control-button--before");
+var button_after = document.querySelector(".live-sample__slider-control-button--after");
 
 button_before.addEventListener("click", function(evt) {
   evt.preventDefault();

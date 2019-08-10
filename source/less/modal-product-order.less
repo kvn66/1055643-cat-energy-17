@@ -1,0 +1,66 @@
+.modal-product-order {
+  display: none;
+  position: fixed;
+  width: 60%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  justify-content: center;
+  align-content: center;
+  padding: 15% 5% 5%;
+
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  background-color: #ffffff;
+
+  z-index: 100;
+
+  &--show {
+    display: flex;
+  }
+}
+
+.modal-product-order p {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  margin: auto 0;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modal-product-order__close {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  border: 0;
+  top: 10%;
+  right: 10%;
+  opacity: 0.3;
+
+  background-image: url("../img/close.svg");
+  background-color: #ffffff;
+  outline: none;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-product-order {
+    padding: 7% 5% 5%;
+  }
+
+  .modal-product-order p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-product-order {
+    padding: 6% 5% 5%;
+  }
+
+  .modal-product-order p {
+    font-size: 20px;
+  }
+}

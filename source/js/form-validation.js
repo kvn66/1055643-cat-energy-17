@@ -1,10 +1,9 @@
-const cat_name = document.querySelector(".about-cat__input-name");
-const cat_weight = document.querySelector(".about-cat__input-weight");
-const contact_email = document.querySelector(".contact-data__input--email");
-const contact_phone = document.querySelector(".contact-data__input--phone");
-const form = document.querySelector("form");
-const alertDialog = document.querySelector(".alert-dialog");
-const alertDialogButton = document.querySelector(".alert-dialog-close");
+// Form validation
+var cat_name = document.querySelector(".about-cat__input-name");
+var cat_weight = document.querySelector(".about-cat__input-weight");
+var contact_email = document.querySelector(".contact-data__input--email");
+var contact_phone = document.querySelector(".contact-data__input--phone");
+var form = document.querySelector("form");
 
 form.addEventListener("submit", function (evt) {
   if (!(
@@ -16,17 +15,6 @@ form.addEventListener("submit", function (evt) {
     contact_phone.validity.valid
   )) {
     evt.preventDefault();
-    if (typeof alertDialog.showModal === "function") {
-      if (alertDialog.classList.contains("visually-hidden")) {
-        alertDialog.classList.remove("visually-hidden");
-      }
-      alertDialog.showModal();
-    } else {
-      alert("Необходимо заполнить все поля.");
-    }
+    alert("Необходимо правильно заполнить все поля, помеченные *.");
   }
-});
-
-alertDialogButton.addEventListener("click", function() {
-  alertDialog.close();
 });
