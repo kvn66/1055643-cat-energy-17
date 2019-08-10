@@ -5,11 +5,11 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="js/picturefill-min.js" as="script">
-  <link rel="preload" href="js/menu-min.js" as="script">
-  <link rel="preload" href="js/live-sample-min.js" as="script">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link as="script" href="js/picturefill-min.js" rel="preload">
+  <link as="script" href="js/menu-min.js" rel="preload">
+  <link as="script" href="js/live-sample-min.js" rel="preload">
+  <link as="font" href="fonts/oswaldregular.woff2" rel="preload">
+  <link as="font" href="fonts/oswaldmedium.woff2" rel="preload">
 </head>
 <body>
 <div style="display: none;">
@@ -24,8 +24,8 @@
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img
-              class="page-header__logo-graph-image" alt="Логотип «Кэт энерджи»" src="img/logo-mobile.svg" width="190"
-              height="37"
+              alt="Логотип «Кэт энерджи»" class="page-header__logo-graph-image" height="37" src="img/logo-mobile.svg"
+              width="190"
             >
           </picture>
         </a>
@@ -71,7 +71,7 @@
     <h2 class="visually-hidden">Наши суперпрограммы</h2>
     <ul class="programs__list">
       <li class="programs__item">
-        <svg class="programs__item-image programs__item-image--lose-weight" width="70" height="97">
+        <svg class="programs__item-image programs__item-image--lose-weight" height="97" width="70">
           <use xlink:href="#icon-cat-slim"></use>
         </svg>
         <h3 class="programs__item-title">Похудение</h3>
@@ -84,7 +84,7 @@
         </a>
       </li>
       <li class="programs__item">
-        <svg class="programs__item-image programs__item-image--fatten" width="134" height="56">
+        <svg class="programs__item-image programs__item-image--fatten" height="56" width="134">
           <use xlink:href="#icon-cat-pro"></use>
         </svg>
         <h3 class="programs__item-title">Набор массы</h3>
@@ -109,12 +109,12 @@
           </p>
         </li>
         <li class="about-technology__item about-technology__item--easy">
-         <p class="about-technology__description">
+          <p class="about-technology__description">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </p>
         </li>
         <li class="about-technology__item about-technology__item--effectively">
-         <p class="about-technology__description">
+          <p class="about-technology__description">
             Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
@@ -131,7 +131,8 @@
       <div class="live-sample__additional-wrapper">
         <h2 class="live-sample__title">Живой пример</h2>
         <p class="live-sample__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат
+          без
           изнуряющих тренировок! При этом он не менял своих привычек&nbsp;и по-прежнему спит по 16 часов в день.
         </p>
         <div class="live-sample__results-wrapper">
@@ -161,36 +162,46 @@
       <div class="live-sample__image-additional-wrapper">
         <div class="live-sample__image-wrapper">
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
+              type="image/webp">
+            <source srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x" type="image/webp">
 
             <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
             <img
-              class="live-sample__image live-sample__image--after" alt="Пример «До и После»" src="img/after-mobile@1x.png"
-              srcset="img/after-mobile@2x.png 2x" width="320" height="240"
+              alt="Пример «До и После»" class="live-sample__image live-sample__image--after"
+              height="240"
+              src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320"
             >
           </picture>
           <div class="live-sample__image-before-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x"
+                type="image/webp">
+              <source srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x" type="image/webp">
 
               <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <img
-                class="live-sample__image live-sample__image--before" alt="Пример «До и После»" src="img/before-mobile@1x.png"
-                srcset="img/before-mobile@2x.png 2x" width="320" height="240"
+                alt="Пример «До и После»" class="live-sample__image live-sample__image--before"
+                height="240"
+                src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320"
               >
             </picture>
           </div>
         </div>
         <div class="live-sample__slider-control">
-          <button class="live-sample__slider-control-button live-sample__slider-control-button--before" type="button">Было</button>
+          <button class="live-sample__slider-control-button live-sample__slider-control-button--before" type="button">
+            Было
+          </button>
           <div class="live-sample__slider-control-image"></div>
-          <button class="live-sample__slider-control-button live-sample__slider-control-button--after" type="button">Стало</button>
+          <button class="live-sample__slider-control-button live-sample__slider-control-button--after" type="button">
+            Стало
+          </button>
         </div>
       </div>
     </div>
@@ -218,7 +229,7 @@
   <div class="page-footer__bottom">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <svg width="127" height="23">
+        <svg height="23" width="127">
           <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
@@ -226,21 +237,21 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg width="22" height="12">
+              <svg height="12" width="22">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <svg width="16" height="16">
+              <svg height="16" width="16">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg width="10" height="19">
+              <svg height="19" width="10">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
@@ -249,7 +260,7 @@
       </div>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
-        <svg class="copyright__image" width="40" height="40">
+        <svg class="copyright__image" height="40" width="40">
           <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
