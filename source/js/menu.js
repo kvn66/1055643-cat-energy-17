@@ -9,7 +9,7 @@ if (open_button.classList.contains("page-header__toggle--no-js")) {
 open_button.classList.toggle("page-header__toggle--closed");
 main_navigation.classList.toggle("main-navigation--closed");
 
-open_button.addEventListener("click", function(evt) {
+open_button.addEventListener("click", function (evt) {
   evt.preventDefault();
   main_navigation.classList.toggle("main-navigation--closed");
   open_button.classList.toggle("page-header__toggle--closed");
