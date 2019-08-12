@@ -98,23 +98,35 @@
 
 @media (min-width: @desktop-width) {
   .page-main-top {
+    position: relative;
     min-height: 696px;
     margin: 0 auto 80px;
+    background-image: none;
 
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 50%;
-    background-color: #ffffff;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      right: 0;
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: cover;
+      background-color: #64a83b;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 
   .page-main-top__wrapper {
     width: @desktop-container;
     padding-left: 80px;
+    z-index: 1;
 
     background-image: url("../img/index-can-desktop@1x.png");
     background-repeat: no-repeat;

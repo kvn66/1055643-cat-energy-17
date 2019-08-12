@@ -11,19 +11,28 @@ var toggleModal = function () {
 };
 
 for (var i = 0; i < openMainPopupButtons.length; i++) {
-  openMainPopupButtons[i].addEventListener("click", function(evt) {
+  openMainPopupButtons[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     toggleModal();
   });
 }
 
 for (var i = 0; i < openAdditionalPopupButtons.length; i++) {
-  openAdditionalPopupButtons[i].addEventListener("click", function(evt) {
+  openAdditionalPopupButtons[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     toggleModal();
   });
 }
 
-closePopupButton.addEventListener("click", function() {
+closePopupButton.addEventListener("click", function () {
   toggleModal();
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.which === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("modal-product-order--show")) {
+      toggleModal();
+    }
+  }
 });
